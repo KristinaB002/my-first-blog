@@ -1,12 +1,7 @@
 from django.contrib import admin
-from django.urls import path
-from django.http import HttpResponse
-
-def home(request):
-    return HttpResponse("Hallo Kristina 😄 deine Website läuft!")
+from django.urls import path, include
 
 urlpatterns = [
-    path('', home),
     path('admin/', admin.site.urls),
+    path('', include('blog1.urls')),
 ]
-
