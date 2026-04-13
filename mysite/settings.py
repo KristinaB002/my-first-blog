@@ -25,12 +25,14 @@ SECRET_KEY = 'django-insecure-^652_i9_y)tw!7y-lh=h@z1haz7#$#z34_sx%5311r*hkr)6bo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kristinabraun.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
+
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'blog1',
     'blog',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Berlin'
 
 USE_I18N = True
 
@@ -116,3 +118,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+SATIC_ROOR = BASE_DIR / 'static'
+
